@@ -8,7 +8,7 @@
 
   <div class="nav-links" :class="{ open: menuOpen }">
     <RouterLink to="/" @click="menuOpen = false">Home</RouterLink>
-    <RouterLink to="/about" @click="menuOpen = false">About</RouterLink>
+    <RouterLink to="/about" @click="menuOpen = false">About Me</RouterLink>
     <RouterLink to="/projects" @click="menuOpen = false">Projects</RouterLink>
     <RouterLink to="/skills" @click="menuOpen = false">Skills</RouterLink>
     <RouterLink to="/contact" @click="menuOpen = false">Contact</RouterLink>
@@ -66,7 +66,7 @@ const menuOpen = ref(false)
 }
 
 .logo span {
-  color: #8B1E2D;
+  color: rgb(19, 8, 11);
 }
 
 .nav-links {
@@ -91,7 +91,7 @@ const menuOpen = ref(false)
   bottom: -8px;
   width: 0;
   height: 2px;
-  background: #8B1E2D;
+  background: #d1c5c7;
   transition: 0.3s ease;
 }
 
@@ -115,7 +115,7 @@ const menuOpen = ref(false)
   padding: 11px 21px;
   border-radius: 7px;
   color: #ffffff !important;
-  background: #8B1E2D;
+  background: #8f202d;
   border: 1px solid #8B1E2D;
   transition: 0.3s ease;
 }
