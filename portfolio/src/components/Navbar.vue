@@ -66,7 +66,7 @@ const menuOpen = ref(false)
 }
 
 .logo span {
-  color: rgb(19, 8, 11);
+  color: crimson;
 }
 
 .nav-links {
