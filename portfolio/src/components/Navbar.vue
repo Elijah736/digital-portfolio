@@ -2,29 +2,28 @@
   <nav class="navbar">
     <div class="navbar-container">
 
-  <RouterLink to="/" class="logo">
-    ELIJAH<span>.</span>
-  </RouterLink>
+      <RouterLink to="/" class="logo">
+        ELIJAH<span>.</span>
+      </RouterLink>
 
-  <div class="nav-links" :class="{ open: menuOpen }">
-    <RouterLink to="/" @click="menuOpen = false">Home</RouterLink>
-    <RouterLink to="/about" @click="menuOpen = false">About Me</RouterLink>
-    <RouterLink to="/projects" @click="menuOpen = false">Projects</RouterLink>
-    <RouterLink to="/contact" @click="menuOpen = false">Contact</RouterLink>
+      <div class="nav-links" :class="{ open: menuOpen }">
+        <RouterLink to="/" @click="menuOpen = false">Home</RouterLink>
+        <RouterLink to="/about" @click="menuOpen = false">About Me</RouterLink>
+        <RouterLink to="/projects" @click="menuOpen = false">Projects</RouterLink>
+        <RouterLink to="/contact" @click="menuOpen = false">Contact</RouterLink>
+      </div>
 
-    <RouterLink to="/contact" class="nav-button" @click="menuOpen = false">
-      Let's Talk
-    </RouterLink>
-  </div>
+      <button
+        class="hamburger"
+        @click="menuOpen = !menuOpen"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <button class="hamburger" @click="menuOpen = !menuOpen" aria-label="Toggle navigation">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
-</div>
-
+    </div>
   </nav>
 </template>
 
@@ -83,7 +82,7 @@ const menuOpen = ref(false)
   transition: 0.3s ease;
 }
 
-.nav-links a:not(.nav-button)::after {
+.nav-links a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -108,26 +107,6 @@ const menuOpen = ref(false)
 
 .nav-links a.router-link-active::after {
   width: 100%;
-}
-
-.nav-button {
-  padding: 11px 21px;
-  border-radius: 7px;
-  color: #ffffff !important;
-  background: #8f202d;
-  border: 1px solid #8B1E2D;
-  transition: 0.3s ease;
-}
-
-.nav-button:hover {
-  background: #A92538;
-  border-color: #A92538;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(139, 30, 45, 0.3);
-}
-
-.nav-button::after {
-  display: none !important;
 }
 
 .hamburger {
@@ -180,13 +159,8 @@ const menuOpen = ref(false)
     padding: 15px 10px;
   }
 
-  .nav-links a:not(.nav-button)::after {
+  .nav-links a::after {
     display: none;
-  }
-
-  .nav-button {
-    margin-top: 10px;
-    text-align: center;
   }
 
   .hamburger {

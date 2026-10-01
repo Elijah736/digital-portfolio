@@ -32,10 +32,10 @@ import removebg from '../assets/removed.bg.png'
       </div>
 
       <div class="buttons">
-        <button class="CV">
+        <!-- <button class="CV">
           Download CV
           <i class="fa-solid fa-download"></i>
-        </button>
+        </button> -->
 
         <a href="/contact" class="contact-btn">
           Contact Me
@@ -211,7 +211,7 @@ h1 span {
   gap: 15px;
 }
 
-.CV {
+/* .CV {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -229,9 +229,9 @@ h1 span {
   font-weight: 600;
 
   transition: 0.3s ease;
-}
+} */
 
-.CV:hover {
+/* .CV:hover {
   cursor: pointer;
 
   background: #A92538;
@@ -249,7 +249,7 @@ h1 span {
 
 .CV:hover i {
   transform: translateY(3px);
-}
+} */
 
 .contact-btn {
   display: flex;
