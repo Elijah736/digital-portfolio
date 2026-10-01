@@ -10,7 +10,6 @@
     <RouterLink to="/" @click="menuOpen = false">Home</RouterLink>
     <RouterLink to="/about" @click="menuOpen = false">About Me</RouterLink>
     <RouterLink to="/projects" @click="menuOpen = false">Projects</RouterLink>
-    <RouterLink to="/skills" @click="menuOpen = false">Skills</RouterLink>
     <RouterLink to="/contact" @click="menuOpen = false">Contact</RouterLink>
 
     <RouterLink to="/contact" class="nav-button" @click="menuOpen = false">
